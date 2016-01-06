@@ -56,7 +56,7 @@ plugins=(brew gem git heroku rails rbenv)
 export JAVA_HOME=`/usr/libexec/java_home`
 export GROOVY_HOME="/usr/local/opt/groovy/libexec"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH="/usr/local/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$HOME/.nodebrew/current/bin:/usr/local/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
 typeset -U path
 # export MANPATH="/usr/local/man:$MANPATH"
 

@@ -27,7 +27,7 @@ brew install gradle
 brew install maven
 brew install scala --with-src
 brew install sbt
-brew install node
+brew install nodebrew
 brew install heroku-toolbelt
 brew install postgresql
 brew install casperjs --devel
