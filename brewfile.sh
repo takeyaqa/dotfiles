@@ -21,7 +21,6 @@ brew install sqlite
 
 brew install python3
 brew install rbenv
-brew install ruby-build
 brew install groovy --with-invokedynamic
 brew install gradle
 brew install maven
