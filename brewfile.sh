@@ -16,7 +16,6 @@ brew install tmux
 brew install gibo
 brew install gist
 brew install wget --with-iri
-brew install curl --with-libidn
 brew install sqlite
 
 brew install python3
@@ -26,7 +25,7 @@ brew install gradle
 brew install maven
 brew install scala --with-src
 brew install sbt
-brew install nodebrew --HEAD
+brew install node
 brew install heroku-toolbelt
 brew install postgresql
 brew install casperjs --devel

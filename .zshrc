@@ -40,7 +40,7 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -49,6 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+RBENV_ROOT="$HOME/.rbenv"
 plugins=(brew gem git heroku rails rbenv)
 
 # User configuration
@@ -56,7 +57,7 @@ plugins=(brew gem git heroku rails rbenv)
 export JAVA_HOME=`/usr/libexec/java_home`
 export GROOVY_HOME="/usr/local/opt/groovy/libexec"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH="$HOME/.nodebrew/current/bin:/usr/local/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
+export PATH="/usr/local/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
 typeset -U path
 # export MANPATH="/usr/local/man:$MANPATH"
 
