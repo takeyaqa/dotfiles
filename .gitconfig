@@ -1,12 +1,13 @@
 [user]
 	name = Takeya
 	email = takeya0x86@gmail.com
-[color]
-	ui = true
 [core]
 	autocrlf = input
+	safecrlf = true
+	editor = code --wait
 	excludesfile = ~/.gitignore_global
-	editor = atom --wait
+[color]
+	ui = true
 [credential]
 	helper = osxkeychain
 [push]
