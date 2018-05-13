@@ -3,7 +3,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 PS1='\u \W$(__git_ps1 " (%s)")\$ '
 
-export JAVA_HOME=`/usr/libexec/java_home`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
