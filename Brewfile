@@ -7,7 +7,6 @@ brew "gradle", args: ["with-all"]
 brew "groovy", args: ["with-invokedynamic"]
 brew "libimobiledevice", args: ["HEAD"]
 brew "ios-webkit-debug-proxy"
-brew "jenkins-lts"
 brew "maven"
-brew "node"
-brew "yarn"
+brew "nodebrew"
+brew "yarn", args: ["without-node"]
