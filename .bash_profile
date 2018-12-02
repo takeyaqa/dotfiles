@@ -12,3 +12,5 @@ PATH=$HOME/.nodebrew/current/bin:$HOME/anaconda3/bin:$PATH
 PATH=$ANDROID_HOME/platform-tools:$JAVA_HOME/bin:$PATH
 PATH=/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH
 export PATH
+
+eval "$(rbenv init -)"
