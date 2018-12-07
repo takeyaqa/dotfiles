@@ -1,5 +1,6 @@
 tap "facebook/fb"
 tap "homebrew/bundle"
+tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 brew "bash-completion"
@@ -15,3 +16,4 @@ brew "postgresql", restart_service: true
 brew "rbenv"
 brew "tree"
 brew "yarn", args: ["without-node"]
+cask "minikube"
