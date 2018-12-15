@@ -7,10 +7,6 @@ docker run --rm -ti \
       -v /tmp/videos:/home/seluser/videos \
       --privileged \
       dosel/zalenium start \
-      --desiredContainers 1 \
-      --maxDockerSeleniumContainers 10 \
-      --maxTestSessions 1 \
       --videoRecordingEnabled false \
       --screenWidth 1920 --screenHeight 1080 \
-      --timeZone "Asia/Tokyo" \
-      --retentionPeriod 3
+      --timeZone "Asia/Tokyo"
