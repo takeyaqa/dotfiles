@@ -1,5 +1,7 @@
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    source $(brew --prefix)/etc/bash_completion
+if type brew 2&>/dev/null; then
+  source "$(brew --prefix)/etc/bash_completion.d/*"
+else
+  echo "run: brew install git bash-completion"
 fi
 PS1='\u \W$(__git_ps1 " (%s)")\$ '
 

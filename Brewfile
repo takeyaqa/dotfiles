@@ -1,4 +1,5 @@
 tap "facebook/fb"
+tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
@@ -6,7 +7,7 @@ tap "homebrew/services"
 brew "bash-completion"
 brew "carthage"
 brew "git"
-brew "gradle", args: ["with-all"]
+brew "gradle"
 brew "groovy", args: ["with-invokedynamic"]
 brew "ios-webkit-debug-proxy"
 brew "jq"
@@ -16,4 +17,5 @@ brew "postgresql", restart_service: true
 brew "rbenv"
 brew "tree"
 brew "yarn", args: ["without-node"]
+brew "heroku/brew/heroku"
 cask "minikube"
