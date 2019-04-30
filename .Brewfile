@@ -4,11 +4,21 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "wix/brew"
+cask "java"
+brew "automake"
 brew "bash-completion"
+brew "bundletool"
+brew "openssl"
 brew "carthage"
+brew "ccache"
+brew "cmake"
+brew "ffmpeg"
 brew "git"
 brew "gradle"
-brew "groovy", args: ["with-invokedynamic"]
+brew "groovy"
+brew "usbmuxd", args: ["HEAD"]
+brew "libimobiledevice", args: ["HEAD"]
 brew "ios-webkit-debug-proxy"
 brew "jq"
 brew "maven"
@@ -16,6 +26,9 @@ brew "nodebrew"
 brew "postgresql", restart_service: true
 brew "rbenv"
 brew "tree"
-brew "yarn", args: ["without-node"]
+brew "yarn"
+brew "facebook/fb/fbsimctl", args: ["HEAD"]
 brew "heroku/brew/heroku"
+brew "wix/brew/applesimutils"
+cask "anaconda"
 cask "minikube"
