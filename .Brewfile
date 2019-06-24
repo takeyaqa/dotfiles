@@ -33,7 +33,7 @@ brew "rbenv"
 brew "tree"
 brew "yarn"
 brew "bazelbuild/tap/bazel"
-brew "facebook/fb/fbsimctl", args: ["HEAD"]
+brew "facebook/fb/idb-companion", link: false
 brew "heroku/brew/heroku"
 brew "wix/brew/applesimutils"
 cask "anaconda"
