@@ -7,8 +7,6 @@ PS1='\u \W$(__git_ps1 " (%s)")\$ '
 
 export JAVA_HOME=`/usr/libexec/java_home`
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
-export GRADLE_HOME=/usr/local/opt/gradle/libexec
 
 PATH=$HOME/bin:/usr/local/sbin:$PATH
 PATH=$HOME/.nodebrew/current/bin:$PATH
