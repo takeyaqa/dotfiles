@@ -12,3 +12,7 @@
 	helper = osxkeychain
 [push]
 	default = simple
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
