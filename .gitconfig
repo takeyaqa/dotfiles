@@ -4,15 +4,14 @@
 [core]
 	autocrlf = input
 	safecrlf = true
-	editor = code --wait
 	excludesfile = ~/.gitignore_global
-[color]
-	ui = true
 [credential]
 	helper = osxkeychain
-[push]
-	default = simple
+[color]
+	ui = true
 [init]
 	defaultBranch = main
+[push]
+	default = simple
 [pull]
 	rebase = false
