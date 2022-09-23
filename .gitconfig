@@ -1,6 +1,9 @@
 [user]
 	name = Takeshi Kishi
 	email = takeya0x86@icloud.com
-[core]
-	autocrlf = input
-	safecrlf = true
+[url "git@github.com:"]
+	insteadOf = https://github.com
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = main
