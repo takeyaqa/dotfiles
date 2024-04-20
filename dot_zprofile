@@ -4,4 +4,4 @@ then
 fi
 
 export VISUAL="code --wait"
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin${PATH+:$PATH}"
+export EDITOR="pico"
