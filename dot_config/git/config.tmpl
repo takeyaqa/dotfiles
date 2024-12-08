@@ -1,6 +1,7 @@
 [user]
 	name = Takeshi Kishi
 	email = {{ .email }}
+	signingkey = {{ .signingkey }}
 [init]
 	defaultBranch = main
 [credential]
@@ -8,3 +9,7 @@
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
