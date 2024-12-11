@@ -1,5 +1,16 @@
-{{- $email := promptStringOnce . "email" "Email address" -}}
-{{- $signingKey := promptStringOnce . "signingKey" "PGP signing key" -}}
+{{- $interactive := stdinIsATTY -}}
+
+{{- $email := "takeyaqa@gmail.com" -}}
+{{- if $interactive -}}
+{{-   $email = promptStringOnce . "email" "Email address" -}}
+{{- end -}}
+
+{{- $signingKey := "" -}}
+{{- if $interactive -}}
+{{-   $signingKey = promptStringOnce . "signingKey" "PGP signing key" -}}
+{{- end -}}
+
+sourceDir = {{ .chezmoi.sourceDir | quote }}
 
 [data]
     email = {{ $email | quote }}
