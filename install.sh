@@ -4,6 +4,8 @@
 # -u: exit on unset variables
 set -eu
 
+mkdir -p "${HOME}/.local/bin"
+
 # Install starship
 if ! starship="$(command -v starship)"; then
 	bin_dir="${HOME}/.local/bin"
