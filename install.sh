@@ -24,12 +24,16 @@ if ! starship="$(command -v starship)"; then
 fi
 
 # Create symlinks
+mkdir -p "${HOME}/.config"
 mkdir -p "${HOME}/.config/git"
-mkdir -p "${HOME}/.config/mise"
-
 ln -snf "${PWD}/.config/git/config" "${HOME}/.config/git/config"
+mkdir -p "${HOME}/.config/mise"
 ln -snf "${PWD}/.config/mise/config.toml" "${HOME}/.config/mise/config.toml"
-ln -snf "${PWD}/.config/starship.toml" "${HOME}/.config/starship.toml"
+if [[ $CODESPACES ]]; then
+	ln -snf "${PWD}/.config/starship.toml" "${HOME}/.config/starship.plain-text-symbols.toml"
+else
+	ln -snf "${PWD}/.config/starship.toml" "${HOME}/.config/starship.nerd-font-symbols.toml"
+fi
 ln -snf "${PWD}/.zprofile" "${HOME}/.zprofile"
 ln -snf "${PWD}/.zshenv" "${HOME}/.zshenv"
 ln -snf "${PWD}/.zshrc" "${HOME}/.zshrc"
