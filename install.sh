@@ -4,23 +4,18 @@
 # -u: exit on unset variables
 set -eu
 
-
 # Install starship
-if ! starship="$(command -v starship)"; then
-	bin_dir="${HOME}/.local/bin"
-	mkdir -p "${bin_dir}"
-	starship="${bin_dir}/starship"
-	echo "Installing starship to '${starship}'" >&2
-	if command -v curl >/dev/null; then
-		starship_install_script="$(curl -fsSL starship.rs/install.sh)"
-	elif command -v wget >/dev/null; then
-		starship_install_script="$(wget -qO- starship.rs/install.sh)"
+if ! command -v starship >/dev/null 2>&1; then
+	if command -v curl >/dev/null 2>&1; then
+		starship_install_script="$(curl -fsSL https://starship.rs/install.sh)"
+	elif command -v wget >/dev/null 2>&1; then
+		starship_install_script="$(wget -qO- https://starship.rs/install.sh)"
 	else
 		echo "To install starship, you must have curl or wget installed." >&2
 		exit 1
 	fi
-	sh -c "${starship_install_script}" -- -b "${bin_dir}" --yes
-	unset starship_install_script bin_dir
+	sh -c "${starship_install_script}" -- --yes
+	unset starship_install_script
 fi
 
 # Create symlinks
@@ -29,7 +24,7 @@ mkdir -p "${HOME}/.config/git"
 ln -snf "${PWD}/.config/git/config" "${HOME}/.config/git/config"
 mkdir -p "${HOME}/.config/mise"
 ln -snf "${PWD}/.config/mise/config.toml" "${HOME}/.config/mise/config.toml"
-if [[ "$CODESPACES" == "true" ]]; then
+if [ "${CODESPACES-}" = "true" ]; then
 	ln -snf "${PWD}/.config/starship.plain-text-symbols.toml" "${HOME}/.config/starship.toml"
 else
 	ln -snf "${PWD}/.config/starship.nerd-font-symbols.toml" "${HOME}/.config/starship.toml"
