@@ -29,7 +29,7 @@ mkdir -p "${HOME}/.config/git"
 ln -snf "${PWD}/.config/git/config" "${HOME}/.config/git/config"
 mkdir -p "${HOME}/.config/mise"
 ln -snf "${PWD}/.config/mise/config.toml" "${HOME}/.config/mise/config.toml"
-if [[ "${CODESPACES}" == "true" ]]; then
+if [[ "$CODESPACES" == "true" ]]; then
 	ln -snf "${PWD}/.config/starship.plain-text-symbols.toml" "${HOME}/.config/starship.toml"
 else
 	ln -snf "${PWD}/.config/starship.nerd-font-symbols.toml" "${HOME}/.config/starship.toml"
