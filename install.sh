@@ -4,11 +4,11 @@
 # -u: exit on unset variables
 set -eu
 
-mkdir -p "${HOME}/.local/bin"
 
 # Install starship
 if ! starship="$(command -v starship)"; then
 	bin_dir="${HOME}/.local/bin"
+	mkdir -p "${bin_dir}"
 	starship="${bin_dir}/starship"
 	echo "Installing starship to '${starship}'" >&2
 	if command -v curl >/dev/null; then
@@ -23,28 +23,13 @@ if ! starship="$(command -v starship)"; then
 	unset starship_install_script bin_dir
 fi
 
-# Install chezmoi
-if ! chezmoi="$(command -v chezmoi)"; then
-	bin_dir="${HOME}/.local/bin"
-	chezmoi="${bin_dir}/chezmoi"
-	echo "Installing chezmoi to '${chezmoi}'" >&2
-	if command -v curl >/dev/null; then
-		chezmoi_install_script="$(curl -fsSL get.chezmoi.io)"
-	elif command -v wget >/dev/null; then
-		chezmoi_install_script="$(wget -qO- get.chezmoi.io)"
-	else
-		echo "To install chezmoi, you must have curl or wget installed." >&2
-		exit 1
-	fi
-	sh -c "${chezmoi_install_script}" -- -b "${bin_dir}"
-	unset chezmoi_install_script bin_dir
-fi
+# Create symlinks
+mkdir -p "${HOME}/.config/git"
+mkdir -p "${HOME}/.config/mise"
 
-# POSIX way to get script's dir: https://stackoverflow.com/a/29834779/12156188
-script_dir="$(cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P)"
-
-set -- init --apply --source="${script_dir}"
-
-echo "Running 'chezmoi $*'" >&2
-# exec: replace current process with chezmoi
-exec "$chezmoi" "$@"
+ln -snf "${PWD}/.config/git/config" "${HOME}/.config/git/config"
+ln -snf "${PWD}/.config/mise/config.toml" "${HOME}/.config/mise/config.toml"
+ln -snf "${PWD}/.config/starship.toml" "${HOME}/.config/starship.toml"
+ln -snf "${PWD}/.zprofile" "${HOME}/.zprofile"
+ln -snf "${PWD}/.zshenv" "${HOME}/.zshenv"
+ln -snf "${PWD}/.zshrc" "${HOME}/.zshrc"

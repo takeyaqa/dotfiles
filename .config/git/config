@@ -1,7 +1,7 @@
 [user]
 	name = Takeshi Kishi
-	email = {{ .email }}
-	signingKey = {{ .signingKey }}
+	email = takeyaqa@gmail.com
+	signingKey = BE2FDF52069149BC
 [init]
 	defaultBranch = main
 [credential]

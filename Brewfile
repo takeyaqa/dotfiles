@@ -1,5 +1,4 @@
 tap "homebrew/bundle"
-brew "chezmoi"
 brew "gh"
 brew "git"
 brew "gnupg"
