@@ -1,6 +1,0 @@
-[tools]
-bun = "latest"
-java = "temurin-21"
-node = "22"
-python = "3.13"
-ruby = "3.3"

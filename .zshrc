@@ -10,8 +10,3 @@ if type starship &>/dev/null
 then
   eval "$(starship init zsh)"
 fi
-
-if type mise &>/dev/null
-then
-  eval "$(mise activate zsh)"
-fi
