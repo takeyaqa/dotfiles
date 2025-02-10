@@ -4,12 +4,14 @@
 	signingKey = BE2FDF52069149BC
 [init]
 	defaultBranch = main
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
 [credential]
 	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
-[commit]
-	gpgSign = true
-[tag]
-	gpgSign = true
+[ghq]
+	root = ~/Projects
