@@ -22,11 +22,7 @@ fi
 mkdir -p "${HOME}/.config"
 mkdir -p "${HOME}/.config/git"
 ln -snf "${PWD}/.config/git/config" "${HOME}/.config/git/config"
-if [ "${CODESPACES-}" = "true" ]; then
-	ln -snf "${PWD}/.config/starship.plain-text-symbols.toml" "${HOME}/.config/starship.toml"
-else
-	ln -snf "${PWD}/.config/starship.nerd-font-symbols.toml" "${HOME}/.config/starship.toml"
-fi
+ln -snf "${PWD}/.config/starship.toml" "${HOME}/.config/starship.toml"
 ln -snf "${PWD}/.zprofile" "${HOME}/.zprofile"
 ln -snf "${PWD}/.zshenv" "${HOME}/.zshenv"
 ln -snf "${PWD}/.zshrc" "${HOME}/.zshrc"
