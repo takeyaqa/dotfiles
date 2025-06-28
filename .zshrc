@@ -42,3 +42,5 @@ fi
 if command -v starship >/dev/null 2>&1; then
   eval "$(starship init zsh)"
 fi
+
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
