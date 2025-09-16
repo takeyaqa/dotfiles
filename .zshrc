@@ -31,14 +31,6 @@ if command -v brew >/dev/null 2>&1; then
   compinit
 fi
 
-if command -v rbenv >/dev/null 2>&1; then
-  eval "$(rbenv init - --no-rehash zsh)"
-fi
-
-if command -v fnm >/dev/null 2>&1; then
-  eval "$(fnm env --use-on-cd --shell zsh)"
-fi
-
 if command -v starship >/dev/null 2>&1; then
   eval "$(starship init zsh)"
 fi
