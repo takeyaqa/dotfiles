@@ -1,14 +1,7 @@
 [user]
 	name = Takeshi Kishi
 	email = takeyaqa@gmail.com
-	signingkey = ~/.ssh/id_ed25519.pub
 [init]
 	defaultBranch = main
-[gpg]
-	format = ssh
-[commit]
-	gpgSign = true
-[tag]
-	gpgSign = true
 [ghq]
 	root = ~/Projects
