@@ -22,6 +22,8 @@ fi
 mkdir -p "${HOME}/.config"
 mkdir -p "${HOME}/.config/git"
 ln -snf "${PWD}/.config/git/config" "${HOME}/.config/git/config"
+mkdir -p "${HOME}/.config/mise"
+ln -snf "${PWD}/.config/mise/config.toml" "${HOME}/.config/mise/config.toml"
 ln -snf "${PWD}/.config/starship.toml" "${HOME}/.config/starship.toml"
 ln -snf "${PWD}/.zprofile" "${HOME}/.zprofile"
 ln -snf "${PWD}/.zshenv" "${HOME}/.zshenv"
