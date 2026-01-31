@@ -8,10 +8,8 @@ set -eu
 if ! command -v starship >/dev/null 2>&1; then
 	if command -v curl >/dev/null 2>&1; then
 		starship_install_script="$(curl -fsSL https://starship.rs/install.sh)"
-	elif command -v wget >/dev/null 2>&1; then
-		starship_install_script="$(wget -qO- https://starship.rs/install.sh)"
 	else
-		echo "To install starship, you must have curl or wget installed." >&2
+		echo "To install starship, you must have curl installed." >&2
 		exit 1
 	fi
 	sh -c "${starship_install_script}" -- --yes
