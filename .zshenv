@@ -10,7 +10,6 @@ export SAVEHIST=32768
 
 export PYTHON_HISTORY="$XDG_STATE_HOME/python_history"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
-export CODEX_HOME="$XDG_CONFIG_HOME/codex"
 
 export VISUAL="code --wait"
 export EDITOR="pico"
