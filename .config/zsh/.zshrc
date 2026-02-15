@@ -23,9 +23,6 @@ fi
 # Options
 
 # History configuration
-HISTFILE=~/.zsh_history
-HISTSIZE=32768
-SAVEHIST=32768
 setopt APPEND_HISTORY           # Append to history file
 setopt SHARE_HISTORY            # Share history across sessions
 setopt HIST_IGNORE_DUPS         # Ignore duplicate commands
@@ -56,6 +53,8 @@ zstyle ':completion:*:*:*:*:*' menu select
 
 # Don't complete hidden files unless explicitly requested
 zstyle ':completion:*' special-dirs false
+
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
 
 # Aliases
 
