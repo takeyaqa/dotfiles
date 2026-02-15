@@ -1,7 +1,3 @@
-# Ensure mise works (disable command hashing)
-setopt NO_HASH_CMDS
-setopt NO_HASH_DIRS
-
 # Tool initialization with safety checks
 if command -v mise >/dev/null 2>&1; then
   eval "$(mise activate zsh)"
@@ -21,6 +17,10 @@ if command -v fzf >/dev/null 2>&1; then
 fi
 
 # Options
+
+# Ensure mise works (disable command hashing)
+setopt NO_HASH_CMDS
+setopt NO_HASH_DIRS
 
 # History configuration
 setopt APPEND_HISTORY           # Append to history file
