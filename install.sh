@@ -17,6 +17,8 @@ if ! command -v starship >/dev/null 2>&1; then
 fi
 
 # Create symlinks
+mkdir -p "${HOME}/.codex"
+ln -snf "${PWD}/.codex/config.toml" "${HOME}/.codex/config.toml"
 mkdir -p "${HOME}/.config"
 mkdir -p "${HOME}/.config/git"
 ln -snf "${PWD}/.config/git/config" "${HOME}/.config/git/config"
