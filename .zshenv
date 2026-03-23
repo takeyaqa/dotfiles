@@ -1,21 +1,29 @@
+# Set XDG Base Directory environment variables
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
+# Set ZDOTDIR to point to the XDG config directory for zsh
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-export HISTFILE="$XDG_STATE_HOME/zsh/history"
-export HISTSIZE=32768
-export SAVEHIST=32768
 
-export PYTHON_HISTORY="$XDG_STATE_HOME/python_history"
+# Set application-specific environment variables to use XDG directories
+export BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle"
+export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle/config"
+export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export GOPATH="$XDG_DATA_HOME/go"
+export GOMODCACHE="$XDG_CACHE_HOME/go/mod"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export PYTHON_HISTORY="$XDG_STATE_HOME/python_history"
+export PYTHONPYCACHEPREFIX="$XDG_CACHE_HOME/python"
+export PYTHONUSERBASE="$XDG_DATA_HOME/python"
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 
-export VISUAL="code --wait"
-export EDITOR="pico"
+# Editor used by CLI
+export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
 export BAT_THEME=ansi
 
-# fzf configuration - match fish
-export FZF_DEFAULT_OPTS='--cycle --layout=default --height=90% --preview-window=wrap --marker="*"'
-export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window up:3:wrap"
+# Add local bin to PATH
+export PATH="$PATH:$HOME/.local/bin"
