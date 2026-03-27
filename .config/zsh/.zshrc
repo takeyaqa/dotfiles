@@ -113,7 +113,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # Tools
-alias t='tmux attach || tmux new -s Work'
 n() { if [ "$#" -eq 0 ]; then command nvim . ; else command nvim "$@"; fi; }
 
 # Git
