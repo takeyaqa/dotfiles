@@ -112,9 +112,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# Tools
-n() { if [ "$#" -eq 0 ]; then command nvim . ; else command nvim "$@"; fi; }
-
 # Git
 alias g='git'
 alias gcm='git commit -m'
