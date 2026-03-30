@@ -1,4 +1,3 @@
-brew "ast-grep"
 brew "bat"
 brew "eza"
 brew "fastfetch"
