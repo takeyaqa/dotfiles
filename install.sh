@@ -19,5 +19,12 @@ fi
 # Create symlinks
 mkdir -p "${HOME}/.codex"
 ln -snf "${PWD}/.codex/config.toml" "${HOME}/.codex/config.toml"
-ln -snf "${PWD}/.config" "${HOME}/.config"
+mkdir -p "${HOME}/.config"
+
+ln -snf "${PWD}/.config/gh" "${HOME}/.config/gh"
+ln -snf "${PWD}/.config/git" "${HOME}/.config/git"
+ln -snf "${PWD}/.config/mise" "${HOME}/.config/mise"
+ln -snf "${PWD}/.config/npm" "${HOME}/.config/npm"
+ln -snf "${PWD}/.config/zsh" "${HOME}/.config/zsh"
+ln -snf "${PWD}/.config/starship.toml" "${HOME}/.config/starship.toml"
 ln -snf "${PWD}/.zshenv" "${HOME}/.zshenv"
