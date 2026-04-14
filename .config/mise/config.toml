@@ -1,15 +1,10 @@
 [tools]
+"gem:rails" = "latest"
 "gem:try-cli" = "latest"
 go = "latest"
 java = "temurin-25"
-lua = "5.1"
 node = "22"
 pnpm = "10"
 python = "3.13"
 ruby = "4"
 rust = "latest"
-
-[settings]
-
-[settings.ruby]
-compile = false
