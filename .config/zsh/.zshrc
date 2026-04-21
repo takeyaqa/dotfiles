@@ -23,7 +23,6 @@ setopt HIST_VERIFY              # Don't execute immediately upon history expansi
 # Completion configuration
 setopt COMPLETE_IN_WORD         # Complete from both ends of word
 setopt ALWAYS_TO_END            # Move cursor to end after completion
-setopt MENU_COMPLETE            # Show completion menu on tab
 setopt AUTO_MENU                # Show completion menu on tab
 
 # Directory navigation
