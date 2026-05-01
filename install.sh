@@ -19,8 +19,8 @@ fi
 # Create symlinks
 mkdir -p "${HOME}/.codex"
 ln -snf "${PWD}/.codex/config.toml" "${HOME}/.codex/config.toml"
-mkdir -p "${HOME}/.config"
 
+mkdir -p "${HOME}/.config"
 ln -snf "${PWD}/.config/gh" "${HOME}/.config/gh"
 ln -snf "${PWD}/.config/git" "${HOME}/.config/git"
 ln -snf "${PWD}/.config/mise" "${HOME}/.config/mise"
