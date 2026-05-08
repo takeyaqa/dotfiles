@@ -4,3 +4,6 @@ sandbox_mode = "workspace-write"
 web_search = "cached"
 model_reasoning_effort = "high"
 personality = "pragmatic"
+
+[features]
+codex_git_commit = true
