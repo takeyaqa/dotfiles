@@ -25,5 +25,8 @@ export EDITOR="pico"
 export VISUAL="code --wait"
 export BAT_THEME=ansi
 
+# Enable Docker CLI complations.
+export FPATH="$HOME/.docker/completions:$FPATH"
+
 # Add local bin to PATH
 export PATH="$PATH:$HOME/.local/bin"

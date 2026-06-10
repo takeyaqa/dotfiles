@@ -1,6 +1,5 @@
 [tools]
 "gem:rails" = "latest"
-"gem:try-cli" = "latest"
 go = "latest"
 java = "temurin-25"
 node = "22"
