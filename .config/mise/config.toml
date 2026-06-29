@@ -1,9 +1,11 @@
 [tools]
-"gem:rails" = "latest"
 go = "latest"
 java = "temurin-25"
-node = "22"
+node = "24"
 pnpm = "10"
 python = "3.13"
 ruby = "4"
 rust = "latest"
+
+[settings.ruby]
+compile = true
