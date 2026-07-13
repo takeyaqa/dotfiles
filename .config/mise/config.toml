@@ -8,4 +8,4 @@ ruby = "4"
 rust = "latest"
 
 [settings.ruby]
-compile = true
+compile = false
