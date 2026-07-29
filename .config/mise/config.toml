@@ -25,6 +25,7 @@
 "~/.config/starship.toml" = {}
 
 [tools]
+bun = "latest"
 go = "latest"
 java = "temurin-25"
 node = "24"
