@@ -18,7 +18,7 @@
 
 [bootstrap.repos]
 "~/.dotfiles" = { url = "https://github.com/takeyaqa/dotfiles.git" }
-"~/Projects/github.com/takeyaqa/Pictrider" = { url = "https://github.com/takeyaqa/PictRider.git" }
+"~/Projects/github.com/takeyaqa/PictRider" = { url = "https://github.com/takeyaqa/PictRider.git" }
 "~/Projects/github.com/takeyaqa/hotel-example-site" = { url = "https://github.com/takeyaqa/hotel-example-site.git" }
 "~/Projects/github.com/takeyaqa/pict-cli" = { url = "https://github.com/takeyaqa/pict-cli.git" }
 "~/Projects/github.com/takeyaqa/pict-wasm" = { url = "https://github.com/takeyaqa/pict-wasm.git" }
