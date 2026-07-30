@@ -34,6 +34,28 @@
 "~/.config/zsh" = { mode = "symlink" }
 "~/.config/starship.toml" = { mode = "symlink" }
 
+[bootstrap.macos.dock]
+autohide = true
+orientation = "bottom"
+tilesize = 43
+magnification = false
+show_recents = false
+
+[bootstrap.macos.finder]
+show_all_files = true
+show_pathbar = true
+show_status_bar = true
+show_extensions_warning = false
+preferred_view_style = "list"
+
+[bootstrap.macos.keyboard]
+press_and_hold = false
+fn_state = true
+
+[bootstrap.macos.trackpad]
+tap_to_click = false
+three_finger_drag = false
+
 [tools]
 bun = "latest"
 go = "latest"
