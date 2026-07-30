@@ -11,18 +11,28 @@
 "brew:ripgrep" = "latest"
 "brew:starship" = "latest"
 "brew:zoxide" = "latest"
+"brew-cask:chatgpt" = "latest"
+"brew-cask:font-jetbrains-mono-nerd-font" = "latest"
+"brew-cask:google-chrome" = "latest"
+"brew-cask:visual-studio-code" = "latest"
 
 [bootstrap.repos]
 "~/.dotfiles" = { url = "https://github.com/takeyaqa/dotfiles.git" }
+"~/Projects/github.com/takeyaqa/Pictrider" = { url = "https://github.com/takeyaqa/PictRider.git" }
+"~/Projects/github.com/takeyaqa/hotel-example-site" = { url = "https://github.com/takeyaqa/hotel-example-site.git" }
+"~/Projects/github.com/takeyaqa/pict-cli" = { url = "https://github.com/takeyaqa/pict-cli.git" }
+"~/Projects/github.com/takeyaqa/pict-wasm" = { url = "https://github.com/takeyaqa/pict-wasm.git" }
+"~/Projects/github.com/takeyaqa/takeyaqa" = { url = "https://github.com/takeyaqa/takeyaqa.git" }
+"~/Projects/github.com/takeyaqa/tester-skills" = { url = "https://github.com/takeyaqa/tester-skills.git" }
 
 [dotfiles]
-"~/.zshenv" = {}
-"~/.config/gh" = {}
-"~/.config/git" = {}
-"~/.config/mise" = {}
-"~/.config/npm" = {}
-"~/.config/zsh" = {}
-"~/.config/starship.toml" = {}
+"~/.zshenv" = { mode = "symlink" }
+"~/.config/gh" = { mode = "symlink" }
+"~/.config/git" = { mode = "symlink" }
+"~/.config/mise" = { mode = "symlink" }
+"~/.config/npm" = { mode = "symlink" }
+"~/.config/zsh" = { mode = "symlink" }
+"~/.config/starship.toml" = { mode = "symlink" }
 
 [tools]
 bun = "latest"
