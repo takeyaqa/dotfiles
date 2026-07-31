@@ -14,6 +14,7 @@ export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export GOPATH="$XDG_DATA_HOME/go"
 export GOMODCACHE="$XDG_CACHE_HOME/go/mod"
+export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export PYTHON_HISTORY="$XDG_STATE_HOME/python_history"
 export PYTHONPYCACHEPREFIX="$XDG_CACHE_HOME/python"
@@ -25,8 +26,5 @@ export EDITOR="pico"
 export VISUAL="code --wait"
 export BAT_THEME=ansi
 
-# Enable Docker CLI complations.
-export FPATH="$HOME/.docker/completions:$FPATH"
-
 # Add local bin to PATH
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$HOME/.local/bin:$PATH"
