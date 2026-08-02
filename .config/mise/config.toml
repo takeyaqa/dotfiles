@@ -1,4 +1,5 @@
 [bootstrap.packages]
+"brew:ast-grep" = "latest"
 "brew:bat" = "latest"
 "brew:eza" = "latest"
 "brew:fd" = "latest"
@@ -7,9 +8,12 @@
 "brew:ghq" = "latest"
 "brew:git" = "latest"
 "brew:jq" = "latest"
+"brew:lazygit" = "latest"
 "brew:mise" = "latest"
+"brew:neovim" = "latest"
 "brew:ripgrep" = "latest"
 "brew:starship" = "latest"
+"brew:wget" = "latest"
 "brew:zoxide" = "latest"
 "brew-cask:chatgpt" = "latest"
 "brew-cask:font-jetbrains-mono-nerd-font" = "latest"
@@ -32,6 +36,7 @@
 "~/.config/git" = { mode = "symlink" }
 "~/.config/mise" = { mode = "symlink" }
 "~/.config/npm" = { mode = "symlink" }
+"~/.config/nvim" = { mode = "symlink" }
 "~/.config/zsh" = { mode = "symlink" }
 "~/.config/starship.toml" = { mode = "symlink" }
 
@@ -41,6 +46,7 @@ orientation = "bottom"
 tilesize = 43
 magnification = false
 show_recents = false
+mru_spaces = false
 
 [bootstrap.macos.finder]
 show_all_files = true
@@ -61,6 +67,7 @@ three_finger_drag = false
 bun = "latest"
 go = "latest"
 java = "temurin-25"
+lua = "5.1"
 node = "24"
 python = "3.14"
 ruby = "4"
