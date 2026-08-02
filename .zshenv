@@ -22,7 +22,7 @@ export PYTHONUSERBASE="$XDG_DATA_HOME/python"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 
 # Editor used by CLI
-export EDITOR="vim"
+export EDITOR="nvim"
 export BAT_THEME=ansi
 
 # Add local bin to PATH
