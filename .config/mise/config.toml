@@ -13,7 +13,6 @@
 "brew:zoxide" = "latest"
 "brew-cask:chatgpt" = "latest"
 "brew-cask:font-jetbrains-mono-nerd-font" = "latest"
-"brew-cask:ghostty" = "latest"
 "brew-cask:google-chrome" = "latest"
 "brew-cask:visual-studio-code" = "latest"
 
