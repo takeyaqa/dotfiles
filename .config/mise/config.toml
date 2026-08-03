@@ -40,6 +40,7 @@ orientation = "bottom"
 tilesize = 43
 magnification = false
 show_recents = false
+mru_spaces = false
 
 [bootstrap.macos.finder]
 show_all_files = true
