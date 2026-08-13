@@ -27,6 +27,7 @@
 
 [dotfiles]
 "~/.zshenv" = { mode = "symlink" }
+"~/.codex" = { mode = "symlink-each" }
 "~/.config/gh" = { mode = "symlink" }
 "~/.config/git" = { mode = "symlink" }
 "~/.config/mise" = { mode = "symlink" }
