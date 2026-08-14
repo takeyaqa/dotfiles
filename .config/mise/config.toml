@@ -65,6 +65,3 @@ node = "24"
 python = "3.14"
 ruby = "4"
 rust = "latest"
-
-[settings.ruby]
-compile = false
