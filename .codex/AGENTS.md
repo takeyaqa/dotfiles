@@ -1,7 +1,6 @@
 # Global settings (shared across all projects)
 
 Personal assumptions and preferences that apply to every project.
-Write project-specific details in each repository's own `AGENTS.md`.
 
 ## Language
 
