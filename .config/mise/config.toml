@@ -36,6 +36,9 @@
 "~/.config/zsh" = { mode = "symlink" }
 "~/.config/starship.toml" = { mode = "symlink" }
 
+[bootstrap.hooks.post-dotfiles]
+run = "source .zshenv"
+
 [bootstrap.macos.dock]
 autohide = true
 orientation = "bottom"
