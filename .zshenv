@@ -25,7 +25,10 @@ export _ZO_DATA_DIR="$XDG_DATA_HOME/zoxide"
 # Editor used by CLI
 export EDITOR="pico"
 export VISUAL="code --wait"
+
+# Set application-specific config
 export BAT_THEME=ansi
+export HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS=1
 
 # Add local bin to PATH
 export PATH="$HOME/.local/bin:$PATH"
